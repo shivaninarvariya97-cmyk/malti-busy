@@ -1,0 +1,32 @@
+{
+  "name": "codex-busy",
+  "version": "1.0.0",
+  "description": "AI-integrated Busy accounting workflow app with admin panel",
+  "main": "server.js",
+  "scripts": {
+    "install:client": "npm --prefix client install",
+    "server": "node server.js",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build:client": "npm --prefix client run build",
+    "build": "npm run build:client",
+    "start": "node server.js",
+    "start:prod": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^6.20.0",
+    "multer": "^2.1.1",
+    "pdf-parse": "^2.4.5",
+    "xlsx": "^0.18.5"
+  }
+}
